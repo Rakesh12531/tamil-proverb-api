@@ -7,18 +7,11 @@ Serving **authentic Tamil proverbs** with meanings, transliterations, and catego
 
 ---
 
-## ⚡ Base URL
-
-https://tamil-proverb-api.onrender.com
-
-
----
-
 ## 🧩 Endpoints
 
 ### 🎲 Random Proverb
 
-GET /api/random
+GET ```/api/random```
 
 **Example Response:**
 ```json
@@ -32,7 +25,7 @@ GET /api/random
 ---
 ### 📚 All Proverbs
 
-GET /api/all
+GET ```/api/all```
 
 Returns all proverbs in the dataset. Perfect for bulk usage! 💾
 
@@ -40,7 +33,7 @@ Returns all proverbs in the dataset. Perfect for bulk usage! 💾
 
 ### 🔍 Search Proverbs by Keyword
 
-GET /api/search/:keyword
+GET ```/api/search/:keyword```
 
 Search both proverb and meaning fields.
 
@@ -48,13 +41,13 @@ Replace :keyword with your search term.
 
 Example:
 
-GET /api/search/heart
+GET ```/api/search/heart```
 
 ---
 
 ### 🏷️ Filter Proverbs by Category
 
-GET /api/category/:cat
+GET ```/api/category/:cat```
 
 Filter proverbs by category like wisdom, life, humor, family.
 
@@ -62,32 +55,39 @@ Replace :cat with the category name.
 
 Example:
 
-GET /api/category/wisdom
+GET ```/api/category/wisdom```
 
 ---
 
-### 🛠️ How to Use
+### 🏷️ Filter Proverbs by Transliteration
 
-Send GET requests to any endpoint. 📡
+GET ```/api/transliteration/:text```
 
-Use the JSON response in your web apps, mobile apps, or AI bots. 🤖
+Replace :text with the transliteration.
 
-Flex your Tamil heritage knowledge like a boss. 💪😎
+Example:
+
+GET ```/api/category/goal```
+
+---
+
+## 🛠️ How to Use
+
+-Send GET requests to any endpoint. 📡
+-Use the JSON response in your web apps, mobile apps, or AI bots. 🤖
+-Flex your Tamil heritage knowledge like a boss. 💪😎
 
 ---
 
-### 🚀 Tech Stack
+## 🚀 Tech Stack
 
-Node.js 🟢
-
-Express ⚡
-
-JSON Dataset 📄
-
-Hosted on Render 🌐
+-Node.js 🟢
+-Express ⚡
+-JSON Dataset 📄
+-Hosted on Render 🌐
 
 ---
-### 💻 Quick Integration Example (JS + Axios)
+## 💻 Quick Integration Example (JS + Axios)
 
 ```
 import axios from "axios";
@@ -99,10 +99,13 @@ const getRandomProverb = async () => {
 
 getRandomProverb();
 
+```
+
 💡 Works in both Node.js and browser environments.
 
-```
-### ❤️ Contributing
+---
+
+## ❤️ Contributing
 
 Open-source & MIT licensed. Fork it, add more proverbs, or improve API functionality. Everyone is welcome! ✨🎉
 
@@ -118,7 +121,7 @@ Open-source & MIT licensed. Fork it, add more proverbs, or improve API functiona
 
 ---
 
-### Made with ❤️ and lots of ☕ by Rakesh Raj.
+## Made with ❤️ and lots of ☕ by Rakesh Raj.
 Deployed API: https://tamil-proverb-api.onrender.com
 
 
