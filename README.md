@@ -27,7 +27,7 @@ GET ```/api/random```
 
 GET ```/api/all```
 
-Returns all proverbs in the dataset. Perfect for bulk usage! 💾
+- Returns all proverbs in the dataset. Perfect for bulk usage! 💾
 
 ---
 
@@ -35,9 +35,9 @@ Returns all proverbs in the dataset. Perfect for bulk usage! 💾
 
 GET ```/api/search/:keyword```
 
-Search both proverb and meaning fields.
+- Search both proverb and meaning fields.
 
-Replace :keyword with your search term.
+- Replace :keyword with your search term.
 
 Example:
 
@@ -49,9 +49,9 @@ GET ```/api/search/heart```
 
 GET ```/api/category/:cat```
 
-Filter proverbs by category like wisdom, life, humor, family.
+- Filter proverbs by category like wisdom, life, humor, family.
 
-Replace :cat with the category name.
+- Replace :cat with the category name.
 
 Example:
 
@@ -63,7 +63,7 @@ GET ```/api/category/wisdom```
 
 GET ```/api/transliteration/:text```
 
-Replace :text with the transliteration.
+- Replace :text with the transliteration.
 
 Example:
 
@@ -73,18 +73,19 @@ GET ```/api/category/goal```
 
 ## 🛠️ How to Use
 
--Send GET requests to any endpoint. 📡
--Use the JSON response in your web apps, mobile apps, or AI bots. 🤖
--Flex your Tamil heritage knowledge like a boss. 💪😎
+- Send GET requests to any endpoint. 📡  
+- Use the JSON response in your web apps, mobile apps, or AI bots. 🤖  
+- Flex your Tamil heritage knowledge like a boss. 💪😎  
+
 
 ---
 
 ## 🚀 Tech Stack
 
--Node.js 🟢
--Express ⚡
--JSON Dataset 📄
--Hosted on Render 🌐
+- Node.js 🟢
+- Express ⚡
+- JSON Dataset 📄
+- Hosted on Render 🌐
 
 ---
 ## 💻 Quick Integration Example (JS + Axios)
