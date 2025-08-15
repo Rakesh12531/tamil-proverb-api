@@ -1,7 +1,7 @@
 # 🌟 Tamil Proverb API 🇮🇳
 
 Welcome to the **ultimate Tamil Proverb API**! 🚀  
-Serving **authentic Tamil proverbs** with meanings, transliterations, and categories. Perfect for apps, websites, chatbots, or just flexing your cultural knowledge. 😎✨
+Serving **authentic Tamil proverbs** with meanings, transliterations, and categories. Perfect for apps, websites, chatbots, or simply expanding your cultural knowledge. 😎✨  
 
 **Live API:** [https://tamil-proverb-api.onrender.com](https://tamil-proverb-api.onrender.com) 🌐
 
@@ -9,12 +9,10 @@ Serving **authentic Tamil proverbs** with meanings, transliterations, and catego
 
 ## 🧩 Endpoints
 
-### 🎲 Random Proverb
-
-GET ```/api/random```
-
-**Example Response:**
-```json
+### 🎲 Random Proverb  
+`GET /api/random`  
+**Example Response:**  
+```
 {
   "proverb": "அகத்தின் அழகு முகத்தில் தெரியும்",
   "transliteration": "Agaththin azhagu mugaththil theriyum",
@@ -22,107 +20,89 @@ GET ```/api/random```
   "category": "wisdom"
 }
 ```
----
-### 📚 All Proverbs
-
-GET ```/api/all```
-
-- Returns all proverbs in the dataset. Perfect for bulk usage! 💾
 
 ---
 
-### 🔍 Search Proverbs by Keyword
-
-GET ```/api/search/:keyword```
-
-- Search both proverb and meaning fields.
-
-- Replace :keyword with your search term.
-
-Example:
-
-GET ```/api/search/heart```
+### 📚 All Proverbs  
+`GET /api/all`  
+Returns all proverbs in the dataset — ideal for bulk usage and offline processing! 💾
 
 ---
 
-### 🏷️ Filter Proverbs by Category
-
-GET ```/api/category/:cat```
-
-- Filter proverbs by category like wisdom, life, humor, family.
-
-- Replace :cat with the category name.
-
-Example:
-
-GET ```/api/category/wisdom```
+### 🔍 Search Proverbs by Keyword  
+`GET /api/search/:keyword`  
+Searches within both the proverb and meaning fields.  
+Replace `:keyword` with your search term.  
+**Example:**  
+`GET /api/search/heart`
 
 ---
 
-### 🏷️ Filter Proverbs by Transliteration
-
-GET ```/api/transliteration/:text```
-
-- Replace :text with the transliteration.
-
-Example:
-
-GET ```/api/category/goal```
+### 🏷️ Filter Proverbs by Category  
+`GET /api/category/:cat`  
+Filter proverbs by categories like wisdom, life, humor, family.  
+Replace `:cat` with the category name.  
+**Example:**  
+`GET /api/category/wisdom`
 
 ---
 
-## 🛠️ How to Use
+### 🔤 Filter Proverbs by Transliteration  
+`GET /api/transliteration/:text`  
+Search proverbs by their transliteration text.  
+Replace `:text` with your search query.  
+**Example:**  
+`GET /api/transliteration/goal`
 
-- Send GET requests to any endpoint. 📡  
-- Use the JSON response in your web apps, mobile apps, or AI bots. 🤖  
-- Flex your Tamil heritage knowledge like a boss. 💪😎  
+---
 
+## 🛠️ How to Use  
+- Send simple GET requests to any endpoint. 📡  
+- Use the JSON responses in your web apps, mobile apps, or AI bots. 🤖  
+- Show off your Tamil heritage knowledge with ease! 💪😎  
 
 ---
 
-## 🚀 Tech Stack
-
-- Node.js 🟢
-- Express ⚡
-- JSON Dataset 📄
-- Hosted on Render 🌐
+## 🚀 Tech Stack  
+- Node.js 🟢  
+- Express ⚡  
+- JSON Dataset 📄  
+- Hosted on Render 🌐  
 
 ---
-## 💻 Quick Integration Example (JS + Axios)
 
+## 💻 Quick Integration Example (JavaScript + Axios)  
 ```
 import axios from "axios";
 
 const getRandomProverb = async () => {
-  const res = await axios.get("https://tamil-proverb-api.onrender.com/api/random");
-  console.log(res.data);
+  try {
+    const res = await axios.get("https://tamil-proverb-api.onrender.com/api/random");
+    console.log(res.data);
+  } catch (error) {
+    console.error("Error fetching proverb", error);
+  }
 };
 
 getRandomProverb();
-
 ```
-
 💡 Works in both Node.js and browser environments.
 
 ---
 
-## ❤️ Contributing
-
-Open-source & MIT licensed. Fork it, add more proverbs, or improve API functionality. Everyone is welcome! ✨🎉
-
----
-
-### 💡 Fun Facts
-
-✅ 744+ Tamil proverbs and counting…
-
-🌱 Perfect for learning Tamil culture & language
-
-🔗 Easy integration for developers & hobbyists
+## ❤️ Contributing  
+This project is open-source and MIT licensed.  
+Feel free to fork, add more proverbs, or improve API functionality. Everyone is welcome! ✨🎉  
 
 ---
 
-## Made with ❤️ and lots of ☕ by Rakesh Raj.
-Deployed API: https://tamil-proverb-api.onrender.com
+### 💡 Fun Facts  
+- ✅ 744+ Tamil proverbs and counting…  
+- 🌱 Perfect for exploring Tamil culture & language  
+- 🔗 Easy integration for developers and hobbyists  
 
+---
 
+Made with ❤️ and lots of ☕ by **Rakesh Raj**.  
+Deployed API: [https://tamil-proverb-api.onrender.com](https://tamil-proverb-api.onrender.com)
+```
